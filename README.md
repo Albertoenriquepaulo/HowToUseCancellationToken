@@ -20,10 +20,10 @@ If you want to follow along, you need:
 
 To demonstrate it, let’s start by creating a new project with:
 
-```
-dotnet new sln CancellationToken
-dotnet new webapi -minimal -n CancellationToken -o src
-dotnet sln add .\src\CancellationToken.csproj
+```shell
+dotnet new sln HowToUseCancellationToken
+dotnet new webapi -minimal -n HowToUseCancellationToken -o src
+dotnet sln add .\HowToUseCancellationToken\HowToUseCancellationToken.csproj
 ```
 
 Now that we have our project, we can go to the `Program.cs` and replace the `GetWeatherForecast` endpoint for this:
@@ -93,3 +93,7 @@ You could see how powerful and convenient it is to use `CancellationToken` in yo
 It also gives you the ability to cancel long-running and/or stuck tasks, thus freeing CPU and memory for other processes.
 
 Happy coding! 💻
+
+
+
+The original code for this article can be found [here](https://github.com/alopes2/Medium-CancellationToken).
